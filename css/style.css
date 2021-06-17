@@ -1614,6 +1614,15 @@ body {
     right: 15px !important;
   }
 
+  .menu-overlay {
+    left: 0 !important;
+    width: 100% !important;
+  }
+  .menu-overlay::before {
+    position: static !important;
+    left: 0;
+  }
+
   .socials {
     display: none !important;
   }
