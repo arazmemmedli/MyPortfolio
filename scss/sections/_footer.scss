@@ -1,0 +1,83 @@
+.footer {
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 45px;
+    &__content {
+        margin: 0 auto;
+        .footer__content__item{
+            &__text {
+                display: block;
+                font-size: $font--size-sixth;
+                font-family: $font--family-primary;
+                color: #999;
+            }
+        }
+        .footer__content__box {
+            .footer__nav__list {
+                float: right;
+                &__item {
+                    padding-left: 10px;
+                    display: inline-block;
+                    &::before {
+                        content: "";
+                        display: inline-block;
+                        height: 10px;
+                    }
+                    a{
+                        display: inline-block;
+                        font-size: $font--size-sixth;
+                        font-family: $font--family-primary;
+                        color: #999;
+                    }
+                    &:nth-child(n+2)::before {
+                        margin-right: 10px;
+                        border-left: 1px solid #ddd;
+                    }
+                }
+                .footer__top__scroll {
+                    position: absolute;
+                    z-index: 11;
+                    top: 50%;
+                    left: 50%;
+                    transform: translateX(-50%) translateY(-50%);
+                    height: 36px;
+                    width: 36px;
+                    line-height: 36px;
+                    display: inline-block;
+                    text-align: center;
+                    border-radius: 50%;
+                    background: #6766db;
+                    background-image: linear-gradient(
+                135deg
+                ,#605cee,#7571c8);
+                    color: #fff;
+                }
+            }
+        }
+        .footer__top__scroll {
+            position: absolute;
+            z-index: 11;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            height: 36px;
+            width: 36px;
+            line-height: 36px;
+            display: inline-block;
+            text-align: center;
+            border-radius: 50%;
+            background: #6766db;
+            background-image: linear-gradient(
+        135deg
+        ,#605cee,#7571c8);
+            color: #fff;
+        }
+    }
+}
+
+@media (min-width: 1220px) {
+    .footer__content {
+        max-width: 1220px;
+        padding: 0 35px;
+    }
+}

@@ -1,0 +1,74 @@
+.main {
+    .about {
+        padding: 100px 0px;
+        &::before {
+            content: '';
+            width: 48%;
+            height: 100%;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.04);
+            left: 0;
+            top: 0;
+        }
+        &__container {
+            &__item {
+                &__title1 {
+                    font-size: $font--size-third;
+                    font-family: $font--family-primary;
+                    line-height: 24px;
+                    font-weight: 400;
+                    color: $clr--secondary-dark;
+                    text-transform: none;
+                }
+                &__title2 {
+                    font-family: $font--family-primary;
+                    font-size: $font--size-fifth;
+                    line-height: 53px;
+                    padding-bottom: 15px;
+                    margin-top: 10px;
+                    margin-bottom: 60px;
+                    text-transform: uppercase;
+                    color: $clr--secondary-dark;
+                    strong {
+                        font-weight: $font--weight-success;
+                    }
+                    &::before {
+                        position: absolute;
+                        content: '';
+                        bottom: -2px;
+                        height: 2px;
+                        width: 100px;
+                        background: #6766db;
+                        background-image: linear-gradient(
+                    135deg
+                    ,#605cee,#fff);
+                    }
+                }
+                &__info {
+                    margin-bottom: 60px;
+                    color: $clr--primary-dark;
+                    font-family: $font--family-primary;
+                    font-weight: $font--weight-light;
+                    line-height: 26px;
+                    font-size: $font--size-sixth;
+
+                }
+                .col-md-6 {
+                    margin-bottom: 46px;
+                }
+                .about__content__description{
+                    font-family: $font--family-primary;
+                    font-size: $font--size-sixth;
+                    line-height: 1.75em;
+                    font-weight: $font--weight-secondary;
+                    color: $clr--primary-dark;
+                    margin: 0 0 20px;
+                }
+                .about__content__strong{
+                    font-weight: $font--weight-main;
+                    color: $clr--secondary-dark;
+                }
+            }
+        }
+    }
+}

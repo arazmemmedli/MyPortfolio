@@ -1,0 +1,111 @@
+.testimonials {
+    padding: 100px 0px;
+    background-color: #f9f9f9;
+    &__content {
+        margin: 0 auto;
+        .carousel {
+            &:hover .carousel-control-prev {
+                display: block;
+            }
+            &:hover .carousel-control-next {
+                display: block;
+            }
+            .carousel-item {
+                .slider__item {
+                    max-width: 650px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    text-align: center;
+                    &__icon {
+                        text-align: center;
+                        span {
+                            display: inline-block;
+                            font-size: $font--size-eighth;
+                            color: $clr--primary-light;
+                            padding: 30px;
+                            background: $clr--primary-main;
+                            background-image: linear-gradient(
+                        135deg
+                        ,#605cee,#7571c8);
+                            border-radius: 50%;
+                            box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
+                        }
+                    }
+                    &__desc {
+                        margin-top: 45px;
+                        margin-bottom: 30px;
+                        p {
+                            font-size: 17px;
+                            margin: 0;
+                            color: #797979;
+                            font-family: $font--family-primary;
+                            font-weight: normal;
+                            line-height: 26px;
+                        }
+                    }
+                    &__info {
+                        &__name {
+                            color: $clr--secondary-dark;
+                            font-weight: 600;
+                            font-family: $font--family-primary;
+                            letter-spacing: 3px;
+                            margin-bottom: 5px;
+                            font-size: $font--size-fourth;
+                            line-height: 22px;
+                        }
+                        p {
+                            margin: 0;
+                            color: #797979;
+                            font-family: $font--family-primary;
+                            font-weight: normal;
+                            line-height: 26px;
+                            font-size: $font--size-sixth;
+                            a{
+                                color: inherit;
+                            }
+                        }
+                    }
+                }
+            }
+            .carousel-control-prev {
+                display: none;
+                .carousel-control-prev-icon {
+                    box-sizing: border-box;
+                    background: #6766db;
+                    background-image: linear-gradient(
+                135deg
+                ,#605cee,#7571c8 !important);
+                    border-radius: 50%;
+                    color: #fff;
+                    font-size: 26px;
+                    height: 54px;
+                    width: 54px;
+                    line-height: 54px;
+                }
+            }
+            .carousel-control-next {
+                display: none;
+                .carousel-control-next-icon {
+                    box-sizing: border-box;
+                    background: #6766db;
+                    background-image: linear-gradient(
+                135deg
+                ,#605cee,#7571c8 !important);
+                    border-radius: 50%;
+                    color: #fff;
+                    font-size: 26px;
+                    height: 54px;
+                    width: 54px;
+                    line-height: 54px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1220px) {
+    .testimonials__content {
+        max-width: 1220px;
+        padding: 0 35px;
+    }
+}

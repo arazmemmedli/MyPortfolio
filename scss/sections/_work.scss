@@ -1,0 +1,162 @@
+.work {
+    padding: 100px 0px;
+    &__content {
+        margin: 0 auto;
+        &__head {
+            text-align: center;
+            margin-bottom: 60px;
+            padding-bottom: 15px;
+            &__title {
+                font-size: $font--size-light;
+                line-height: 42px;
+                color: $clr--secondary-dark;
+                font-family: $font--family-primary;
+                font-weight: $font--weight-secondary;
+                &::before {
+                    position: absolute;
+                    content: '';
+                    bottom: -16px;
+                    height: 2px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 100px;
+                    background: #6766db;
+                    background-image: linear-gradient(
+                135deg
+                ,#605cee,#fff);
+                }
+            }
+        }
+        .work__gallery__filter {
+            text-align: center;
+            &__menu {
+                padding: 0 40px;
+                display: inline-block;
+                margin-bottom: 60px;
+                &::before {
+                    position: absolute;
+                    content: '';
+                    height: 1px;
+                    width: 80px;
+                    top: 50%;
+                    margin-top: -1px;
+                    left: -80px;
+                    background: #6766db;
+                    background-image: linear-gradient(
+                -135deg
+                ,#605cee,#fff);
+                }
+                &::after {
+                    position: absolute;
+                    content: '';
+                    height: 1px;
+                    width: 80px;
+                    top: 50%;
+                    margin-top: -1px;
+                    right: -80px;
+                    background: #6766db;
+                    background-image: linear-gradient(
+                135deg
+                ,#605cee,#fff);
+                }
+                &__item {
+                    display: inline-block;
+                    color: #000;
+                    cursor: pointer;
+                    font-family: $font--family-primary;
+                    padding: 3px 15px;
+                    border: 1px solid transparent;
+                    text-decoration: none !important;
+                    border-radius: 4px;
+                    transition: all .3s ease;
+                    &:hover {
+                        background: $clr--primary-main;
+                        background-image: linear-gradient(
+                                    135deg
+                                    ,#605cee,#7571c8);
+                        color: #fff;
+                    }
+                    &.f_active {
+                        background: $clr--primary-main;
+                        background-image: linear-gradient(
+                                    135deg
+                                    ,#605cee,#7571c8);
+                        color: #fff;
+                    }
+                }
+            }
+            .container {
+                .gallery__filter__content {
+                    &__box {
+                        overflow: hidden;
+                        &:hover img {
+                            transform: scale(1.25);
+                            filter: unset;
+                        }
+                        &__img {
+                            overflow: hidden;
+                            img {
+                                max-width: 100%;
+                                height: auto;
+                                transform: scale(1);
+                                transition: all .4s ease-in-out;
+                                filter: grayscale(1);
+                                box-sizing: border-box;
+                            }
+                        }
+                        .single__portfolio__info {
+                            padding: 25px;
+                            background: #fff;
+                            transition: all .3s ease;
+                            &__head {
+                                text-align: center;
+                                .single__portfolio__info__title {
+                                    font-size: $font--size-sixth;
+                                    font-family: $font--family-primary;
+                                    line-height: 24px;
+                                    a{
+                                        text-transform: uppercase;
+                                        color: $clr--secondary-dark;
+                                        display: block;
+                                    }
+                                    span{
+                                        font-family: $font--family-primary;
+                                        color: $clr--secondary-dark;
+                                        font-size: $font--size-secondary;
+                                        font-weight: $font--weight-primary;
+                                    }
+                                }
+                            }
+                            .single__portfolio__info__icon{
+                                bottom: 80px;
+                                right: 40px;
+                                a {
+                                    height: 40px;
+                                    width: 40px;
+                                    display: block;
+                                    text-align: center;
+                                    line-height: 40px;
+                                    background: #fff;
+                                    color: #444;
+                                    border-radius: 50%;
+                                    -webkit-transition: all .3s ease;
+                                    transition: all .3s ease;
+                                    &:hover {
+                                        background: #f5f5f5;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1220px) {
+    .work__content {
+        max-width: 1200px;
+        padding: 0 35px;
+    }
+}
