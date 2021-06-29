@@ -100,9 +100,6 @@
         max-width: 980px;
         margin: 0 auto;
         padding: 0 25px !important;
-        // .blog__post__content {
-        //     margin-left: 22% !important;
-        // }
     }
     .skills__wrapper{
         box-sizing: border-box;
@@ -511,7 +508,7 @@
             margin-bottom: 25px;
             .blog__post__date {
                 span {
-                    top: 15px !important;
+                    top: 0 !important;
                 }
             }
         }
