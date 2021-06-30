@@ -97,6 +97,12 @@ $('.work__gallery__filter__menu__item').on('click', (e) => {
     }
 });
 
+let hireMe = document.getElementById('hireMe');
+hireMe.addEventListener('click', () => {
+    event.preventDefault()
+    document.documentElement.scrollTo(0,5432);
+})
+
 let downArrow = document.getElementById('downArrow');
 downArrow.addEventListener('click', () => {
     event.preventDefault()
