@@ -100,7 +100,7 @@ $('.work__gallery__filter__menu__item').on('click', (e) => {
 let hireMe = document.getElementById('hireMe');
 hireMe.addEventListener('click', () => {
     event.preventDefault()
-    document.documentElement.scrollTo(0,5432);
+    document.documentElement.scrollTo(0,5780);
 })
 
 let downArrow = document.getElementById('downArrow');
@@ -166,7 +166,7 @@ skills.addEventListener('click', () => {
 
 contact.addEventListener('click', () => {
     event.preventDefault()
-    document.documentElement.scrollTo(0,5432);
+    document.documentElement.scrollTo(0,5780);
 })
 
 const t_home = document.getElementById('t_home');
@@ -215,7 +215,7 @@ t_skills.addEventListener('click', () => {
 
 t_contact.addEventListener('click', () => {
     event.preventDefault()
-    document.documentElement.scrollTo(0,5432);
+    document.documentElement.scrollTo(0,5780);
 })
 
 // Preloader

@@ -460,6 +460,9 @@
         box-sizing: border-box;
         max-width: 980px !important;
         padding: 0 25px !important;
+        .experience__content__list__box {
+            padding: 0 25px !important;
+        }
         .experience__content__list__date {
             display: inline-block;
             margin-bottom: 15px !important;

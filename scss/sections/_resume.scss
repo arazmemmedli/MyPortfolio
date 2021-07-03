@@ -116,6 +116,34 @@
                                     margin-top: 5px;
                                     margin-bottom: 30px;
                                 }
+                                .skills__grid {
+                                    display: flex;
+                                    flex-direction: row;
+                                    flex-wrap: wrap;
+                                    gap: 10px;
+                                    li {
+                                        background: #6766db;
+                                        width: 80px;
+                                        text-align: center;
+                                        height: 80px;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        border-radius: 10px;
+                                        .skills__grid__icon {
+                                            img {
+                                                width: 35px;
+                                                height: 35px;
+                                            }
+                                            span {
+                                                display: block;
+                                                font-size: $font--size-secondary;
+                                                font-family: $font--family-primary;
+                                                color: $clr--primary-light;
+                                            }
+                                        }
+                                    }
+                                }
                             }
                         }
                     }

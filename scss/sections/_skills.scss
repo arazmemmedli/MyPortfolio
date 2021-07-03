@@ -1,83 +1,133 @@
 .skills {
-    padding: 100px 0px;
-    &__wrapper{
-        margin: 0 auto;
-        .skills__text__box {
-            padding-left: 40px;
-            &__subtitle{
-                transform: rotate(270deg) translateX(-100%);
-                transform-origin: left top;
-                text-transform: uppercase;
-                top: 5px;
-                font-weight: $font--weight-secondary;
-                font-family: $font--family-primary;
-                align-items: center;
-                left: 0;
-                &::before {
-                    margin-right: 20px;
-                    background-color: #9f9f9f;
-                    content: "";
-                    display: inline-block;
-                    height: 2px;
-                    width: 60px;
-                }
-            }
-            h2{
-                color: $clr--secondary-dark;
-                font-family: $font--family-primary;
-                font-weight: $font--weight-success;
-                font-size: 2rem;
-                margin-bottom: 20px;
-                &::before {
-                    position: absolute;
-                    content: '';
-                    bottom: -10px;
-                    height: 2px;
-                    width: 100px;
-                    background: #6766db;
-                    background-image: linear-gradient(
-                135deg
-                ,#605cee,#fff);
-                }
-            }
-            p {
-                font-size: 1rem;
-                font-family: $font--family-primary;
-                color: $clr--secondary-dark;
-                font-weight: $font--weight-secondary;
-                line-height: 1.8rem;
+    padding-bottom: 100px;
+    &__head {
+        text-align: center;
+        margin-bottom: 40px;
+        &__title {
+            font-family: $font--family-primary;
+            font-size: $font--size-light;
+            color: $clr--secondary-dark;
+            &::before {
+                position: absolute;
+                content: '';
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: -16px;
+                height: 2px;
+                width: 100px;
+                background: #6766db;
+                background-image: linear-gradient(
+            135deg
+            ,#605cee,#fff);
             }
         }
-        .skills__grid {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            gap: 10px;
-            li {
-                background: #6766db;
-                width: 80px;
-                text-align: center;
-                height: 80px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border-radius: 10px;
-                .skills__grid__icon {
-                    img {
-                        width: 35px;
-                        height: 35px;
-                    }
-                    span {
-                        display: block;
-                        font-size: $font--size-secondary;
-                        font-family: $font--family-primary;
-                        color: $clr--primary-light;
+    }
+    &__wrapper {
+        margin: 0 auto;
+        .skills__hero{
+            &__title__small{
+                display: block;
+                font-family: $font--family-primary;
+                font-size: $font--size-secondary;
+                text-transform: uppercase;
+                color: $clr--primary-main;
+                font-weight: $font--weight-secondary;
+                letter-spacing: 5px;
+            }
+            &__title{
+                color: $clr--secondary-dark;
+                font-family: $font--family-primary;
+                margin-bottom: 20px;
+                font-weight: $font--weight-primary;
+                font-size: $font--size-light;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+                line-height: 1.5em;
+            }
+            .skills__content{
+                &__container{
+                    &__list{
+                        padding-top: 15px;
+                        padding-bottom: 15px;
+                        li{
+                            margin-bottom: 15px;
+                            margin-left: 10px;
+                            &:hover .skills__content__list__box::before{
+                                background-color: $clr--primary-main;
+                            }
+                            .skills__content__list__box{
+                                color: #6766db;
+                                .skills__content__item {
+                                    border: 1px solid gray;
+                                    border-radius: 10px;
+                                    padding: 20px;
+                                    box-shadow: 0px 0px 10px;
+                                }
+                                h4{
+                                    margin-top: 0px;
+                                    font-weight: $font--weight-success;
+                                    color: $clr--secondary-main;
+                                    margin-bottom: 7px;
+                                    font-size: $font--size-third;
+                                    font-family: $font--family-primary;
+                                }
+                                .skills__content__list__date{
+                                    display: inline-block;
+                                    font-family: $font--family-primary;
+                                    font-size: $font--size-third;
+                                    font-weight: $font--weight-success;
+                                    text-transform: uppercase;
+                                    color: $clr--secondary-main;
+                                    height: 25.6px;
+                                    -webkit-transition: all .3s ease;
+                                    transition: all .3s ease;
+                                }
+                                p{
+                                    font-family: $font--family-primary;
+                                    font-size: $font--size-third;
+                                    line-height: 1.75em;
+                                    font-weight: 400;
+                                    color: $clr--primary-dark;
+                                    margin-top: 5px;
+                                    margin-bottom: 30px;
+                                }
+                                .skills__grid {
+                                    display: flex;
+                                    flex-direction: row;
+                                    flex-wrap: wrap;
+                                    gap: 10px;
+                                    li {
+                                        background: #6766db;
+                                        width: 80px;
+                                        text-align: center;
+                                        height: 80px;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        border-radius: 10px;
+                                        .skills__grid__icon {
+                                            img {
+                                                width: 35px;
+                                                height: 35px;
+                                            }
+                                            span {
+                                                display: block;
+                                                font-size: $font--size-secondary;
+                                                font-family: $font--family-primary;
+                                                color: $clr--primary-light;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
         }
     }
 }
+
 
 @media (min-width: 1220px) {
     .skills__wrapper{
