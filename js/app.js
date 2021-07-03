@@ -223,3 +223,10 @@ body.onload = function(){
     let preloader = document.querySelector('.preloader');
     preloader.style.display = "none";
 } 
+
+let a_work = document.getElementById('a_work');
+
+a_work.addEventListener('click', () => {
+    event.preventDefault()
+    document.documentElement.scrollTo(0,1722);
+})
