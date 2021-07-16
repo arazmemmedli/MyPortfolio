@@ -659,104 +659,62 @@ table {
 }
 
 .skills {
-  padding-bottom: 100px;
+  padding: 100px 0px;
 }
-.skills__head {
-  text-align: center;
-  margin-bottom: 40px;
+.skills__wrapper {
+  margin: 0 auto;
 }
-.skills__head__title {
+.skills__wrapper .skills__text__box {
+  padding-left: 40px;
+}
+.skills__wrapper .skills__text__box__subtitle {
+  transform: rotate(270deg) translateX(-100%);
+  transform-origin: left top;
+  text-transform: uppercase;
+  top: 5px;
+  font-weight: 400;
   font-family: "Montserrat", sans-serif;
-  font-size: 36px;
-  color: #444;
+  align-items: center;
+  left: 0;
 }
-.skills__head__title::before {
+.skills__wrapper .skills__text__box__subtitle::before {
+  margin-right: 20px;
+  background-color: #9f9f9f;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  width: 60px;
+}
+.skills__wrapper .skills__text__box h2 {
+  color: #444;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.skills__wrapper .skills__text__box h2::before {
   position: absolute;
   content: "";
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: -16px;
+  bottom: -10px;
   height: 2px;
   width: 100px;
   background: #6766db;
   background-image: linear-gradient(135deg, #605cee, #fff);
 }
-.skills__wrapper {
-  margin: 0 auto;
-}
-.skills__wrapper .skills__hero__title__small {
-  display: block;
+.skills__wrapper .skills__text__box p {
+  font-size: 1rem;
   font-family: "Montserrat", sans-serif;
-  font-size: 12px;
-  text-transform: uppercase;
-  color: #6766db;
-  font-weight: 400;
-  letter-spacing: 5px;
-}
-.skills__wrapper .skills__hero__title {
   color: #444;
-  font-family: "Montserrat", sans-serif;
-  margin-bottom: 20px;
-  font-weight: 500;
-  font-size: 36px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  line-height: 1.5em;
-}
-.skills__wrapper .skills__hero .skills__content__container__list {
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-.skills__wrapper .skills__hero .skills__content__container__list li {
-  margin-bottom: 15px;
-  margin-left: 10px;
-}
-.skills__wrapper .skills__hero .skills__content__container__list li:hover .skills__content__list__box::before {
-  background-color: #6766db;
-}
-.skills__wrapper .skills__hero .skills__content__container__list li .skills__content__list__box {
-  color: #6766db;
-}
-.skills__wrapper .skills__hero .skills__content__container__list li .skills__content__list__box .skills__content__item {
-  border: 1px solid gray;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0px 0px 10px;
-}
-.skills__wrapper .skills__hero .skills__content__container__list li .skills__content__list__box h4 {
-  margin-top: 0px;
-  font-weight: 700;
-  color: #191919;
-  margin-bottom: 7px;
-  font-size: 18px;
-  font-family: "Montserrat", sans-serif;
-}
-.skills__wrapper .skills__hero .skills__content__container__list li .skills__content__list__box .skills__content__list__date {
-  display: inline-block;
-  font-family: "Montserrat", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #191919;
-  height: 25.6px;
-  transition: all 0.3s ease;
-}
-.skills__wrapper .skills__hero .skills__content__container__list li .skills__content__list__box p {
-  font-family: "Montserrat", sans-serif;
-  font-size: 18px;
-  line-height: 1.75em;
   font-weight: 400;
-  color: #797979;
-  margin-top: 5px;
-  margin-bottom: 30px;
+  line-height: 1.8rem;
 }
-.skills__wrapper .skills__hero .skills__content__container__list li .skills__content__list__box .skills__grid {
+.skills__wrapper .skills__grid {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 10px;
 }
-.skills__wrapper .skills__hero .skills__content__container__list li .skills__content__list__box .skills__grid li {
+.skills__wrapper .skills__grid li {
   background: #6766db;
   width: 80px;
   text-align: center;
@@ -766,11 +724,11 @@ table {
   align-items: center;
   border-radius: 10px;
 }
-.skills__wrapper .skills__hero .skills__content__container__list li .skills__content__list__box .skills__grid li .skills__grid__icon img {
+.skills__wrapper .skills__grid li .skills__grid__icon img {
   width: 35px;
   height: 35px;
 }
-.skills__wrapper .skills__hero .skills__content__container__list li .skills__content__list__box .skills__grid li .skills__grid__icon span {
+.skills__wrapper .skills__grid li .skills__grid__icon span {
   display: block;
   font-size: 12px;
   font-family: "Montserrat", sans-serif;
