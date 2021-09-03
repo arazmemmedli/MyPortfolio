@@ -78,7 +78,6 @@ for(let i = 0; i < listItems.length; i++){
 
 $('.work__gallery__filter__menu__item').on('click', (e) => {
     const filter = $(e.target).attr('data-filter');
-    console.log(filter);
     const items = $('.gallery__filter__content__box').parent();
     for (item of items) {
 
@@ -96,6 +95,8 @@ $('.work__gallery__filter__menu__item').on('click', (e) => {
         console.log($(item).attr('data-category') == filter)
     }
 });
+
+// Gallery Filter End
 
 let hireMe = document.getElementById('hireMe');
 hireMe.addEventListener('click', () => {
@@ -218,11 +219,15 @@ t_contact.addEventListener('click', () => {
     document.documentElement.scrollTo(0,5780);
 })
 
+// Scroll End
+
 // Preloader
 body.onload = function(){
     let preloader = document.querySelector('.preloader');
     preloader.style.display = "none";
 } 
+
+// Preloader End
 
 let a_work = document.getElementById('a_work');
 
@@ -230,3 +235,4 @@ a_work.addEventListener('click', () => {
     event.preventDefault()
     document.documentElement.scrollTo(0,1722);
 })
+
