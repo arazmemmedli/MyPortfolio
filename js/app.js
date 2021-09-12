@@ -92,7 +92,6 @@ $('.work__gallery__filter__menu__item').on('click', (e) => {
             $(item).addClass('d-none');
             $(item).parent().addClass('d-none');
         }
-        console.log($(item).attr('data-category') == filter)
     }
 });
 
